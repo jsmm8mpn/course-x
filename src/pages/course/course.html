@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Course</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let week of weeks" (click)="select(week.id)">
+      <h2>{{week.num}}</h2>
+      <h3>{{week.title}}</h3>
+      <p>{{week.desc}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
